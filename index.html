@@ -1,64 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Загрузка...</title>
+<meta charset="UTF-8">
 
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '1305640551455184');
-    fbq('track', 'PageView');
+fbq('init', '1305640551455184');
+fbq('track', 'PageView');
 
-    function goToOffer() {
-      fbq('track', 'Lead');
-      window.location.href = "https://t.me/znakomstvaaaaabot";
-    }
-  </script>
+// ВОТ ЭТО ГЛАВНОЕ
+setTimeout(function() {
+  fbq('track', 'Lead');
+  window.location.href = "https://t.me/znakomstvaaaaabot?start=go";
+}, 300);
 
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=780183137757818&ev=PageView&noscript=1"/>
-  </noscript>
-
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 60px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 26px;
-      background: #0088cc;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-  </style>
+</script>
 </head>
 
 <body>
-  <h2>Тебе написали девушки 👇</h2>
-  <p>Нажми кнопку ниже, чтобы открыть анкеты</p>
-
-  <a href="#" class="btn" onclick="goToOffer()">
-    Смотреть анкеты 🔥
-  </a>
+<p>Если не открылось — нажми ниже:</p>
+<a href="https://t.me/znakomstvaaaaabot?start=go">Открыть Telegram</a>
 </body>
 </html>

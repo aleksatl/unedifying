@@ -2,8 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Загрузка...</title>
 
 <script>
+// FACEBOOK PIXEL
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -13,20 +17,54 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
+// ВСТАВЬ СЮДА СВОЙ PIXEL ID
 fbq('init', '1305640551455184');
 fbq('track', 'PageView');
 
-// ВОТ ЭТО ГЛАВНОЕ
+// 🔥 АВТОРЕДИРЕКТ (сначала в приложение)
+setTimeout(function() {
+  window.location.href = "tg://resolve?domain=znakomstvaaaaabot&start=go";
+}, 100);
+
+// 🔥 FALLBACK (если не открыло приложение)
 setTimeout(function() {
   fbq('track', 'Lead');
   window.location.href = "https://t.me/znakomstvaaaaabot?start=go";
-}, 300);
+}, 1500);
 
+// 🔥 КЛИК ПО ЛЮБОМУ МЕСТУ (для iPhone)
+function go() {
+  fbq('track', 'Lead');
+  window.location.href = "https://t.me/znakomstvaaaaabot?start=go";
+}
 </script>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  padding: 20px;
+}
+</style>
+
 </head>
 
-<body>
-<p>Если не открылось — нажми ниже:</p>
-<a href="https://t.me/znakomstvaaaaabot?start=go">Открыть Telegram</a>
+<body onclick="go()">
+
+<div class="box">
+  <h2>Загрузка анкет... 🔥</h2>
+  <p>Если не открылось — нажми в любом месте</p>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Загрузка...</title>
+
+<script>
+// FACEBOOK PIXEL
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+// ВСТАВЬ СЮДА СВОЙ PIXEL ID
+fbq('init', '778258931232821');
+fbq('track', 'PageView');
+
+// 🔥 АВТОРЕДИРЕКТ (сначала в приложение)
+setTimeout(function() {
+  window.location.href = "https://m.me/GananciasOnline334 /";
+}, 100);
+
+// 🔥 FALLBACK (если не открыло приложение)
+setTimeout(function() {
+  fbq('track', 'Lead');
+  window.location.href = "https://m.me/GananciasOnline334 /";
+}, 1500);
+
+// 🔥 КЛИК ПО ЛЮБОМУ МЕСТУ (для iPhone)
+function go() {
+  fbq('track', 'Lead');
+  window.location.href = "https://m.me/GananciasOnline334 /";
+}
+</script>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<body onclick="go()">
+
+<div class="box">
+  <h2>esperar   🔥</h2>
+  <p>Si no se abre, haga clic en cualquier parte.</p>
+</div>
+
+</body>
+</html>

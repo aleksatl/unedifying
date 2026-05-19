@@ -23,19 +23,19 @@ fbq('track', 'Submitapplication');
 
 // 🔥 АВТОРЕДИРЕКТ (сначала в приложение)
 setTimeout(function() {
-  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio /";
+  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio";
 }, 100);
 
 // 🔥 FALLBACK (если не открыло приложение)
 setTimeout(function() {
   fbq('track', 'Lead');
-  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio /";
+  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio";
 }, 1500);
 
 // 🔥 КЛИК ПО ЛЮБОМУ МЕСТУ (для iPhone)
 function go() {
   fbq('track', 'Lead');
-  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio /";
+  window.location.href = "https://wa.me/393511523456?text=Voglio%20inizio";
 }
 </script>
 
